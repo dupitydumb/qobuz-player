@@ -213,6 +213,116 @@
 
         .hidden { display: none !important; }
         .text-center { text-align: center; color: var(--text-subdued, #666); margin-top: 60px; font-size: 14px; }
+
+        /* ═══ Mobile Responsive ═══ */
+        @media (max-width: 768px) {
+          #qobuz-search-panel {
+            width: 100vw;
+            height: 100vh;
+            max-height: 100vh;
+            top: 0; left: 0;
+            transform: none;
+            border-radius: 0;
+            border: none;
+          }
+          #qobuz-search-panel.open {
+            transform: none;
+          }
+
+          .qobuz-header {
+            padding: 12px 16px;
+            gap: 12px;
+          }
+          .qobuz-back-btn,
+          .qobuz-close-btn {
+            min-width: 44px;
+            min-height: 44px;
+            -webkit-tap-highlight-color: transparent;
+          }
+          .qobuz-title {
+            font-size: 16px;
+          }
+
+          .qobuz-controls {
+            padding: 12px 16px;
+          }
+          .qobuz-input {
+            font-size: 16px; /* prevent iOS zoom */
+            padding: 12px 16px 12px 40px;
+          }
+          .qobuz-tab {
+            padding: 10px;
+            min-height: 44px;
+            -webkit-tap-highlight-color: transparent;
+          }
+
+          .qobuz-content {
+            padding-bottom: calc(60px + 64px); /* bottom nav + mini player */
+          }
+
+          /* Hero section stacks vertically on mobile */
+          .qobuz-hero {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 16px;
+            gap: 16px;
+          }
+          .qobuz-hero-cover {
+            width: 140px;
+            height: 140px;
+          }
+          .qobuz-hero-title {
+            font-size: 20px;
+          }
+          .qobuz-hero-meta {
+            justify-content: center;
+          }
+          .qobuz-save-all-btn {
+            padding: 10px 16px;
+            min-height: 44px;
+            -webkit-tap-highlight-color: transparent;
+          }
+
+          /* Track items: always show actions on mobile (no hover) */
+          .qobuz-track-item {
+            grid-template-columns: 44px 1fr auto auto;
+            padding: 10px 8px;
+            -webkit-tap-highlight-color: transparent;
+          }
+          .qobuz-track-actions {
+            opacity: 1;
+          }
+          .qobuz-save-btn-mini {
+            min-width: 44px;
+            min-height: 44px;
+            -webkit-tap-highlight-color: transparent;
+          }
+          .qobuz-play-overlay {
+            display: none;
+          }
+
+          /* Grid cards: 2 columns on mobile */
+          .qobuz-grid-list {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 12px;
+            padding: 12px;
+          }
+          .qobuz-card {
+            -webkit-tap-highlight-color: transparent;
+          }
+          .qobuz-card:hover {
+            transform: none;
+          }
+
+          /* Clickable artist: larger touch target */
+          .qobuz-clickable-artist {
+            min-height: 44px;
+            display: inline-flex;
+            align-items: center;
+            -webkit-tap-highlight-color: transparent;
+          }
+        }
       `;
       document.head.appendChild(style);
     },
