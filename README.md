@@ -4,6 +4,10 @@
 
 This plugin integrates the Qobuz music catalog into Audion, allowing you to search for tracks, albums, and artists, and stream them directly within the app. It supports high-resolution audio and library management.
 
+<img width="1276" height="803" alt="image" src="https://github.com/user-attachments/assets/1c795bc3-e8e7-4390-b961-ec77a527b82d" />
+
+<img width="1278" height="793" alt="image" src="https://github.com/user-attachments/assets/1cb58bbe-3d52-4e8f-83de-ebd32a925f1b" />
+
 ## Features
 
 - **Direct Search**: Search the entire Qobuz catalog for Tracks, Albums, and Artists.
@@ -44,4 +48,5 @@ This plugin requires the following permissions:
 - `ui:inject`: To show the search panel.
 - `player:control`: To play tracks.
 - `library:write`: To save tracks to your library.
+
 - `library:read`: To check if tracks are already saved.
