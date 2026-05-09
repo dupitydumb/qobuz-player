@@ -17,7 +17,7 @@
         "library:downloadTrack"
     ],
     "ui_slots": [],
-    "icon": "https://github.com/dupitydumb/qobuz-player/blob/main/icon.png",
+    "icon": "icon.png",
     "category": "library",
     "tags": [
         "search",
